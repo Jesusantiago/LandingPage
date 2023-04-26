@@ -1,0 +1,23 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesusantiago/LandingPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jesusantiago/LandingPage/issues"
+  },
+  "homepage": "https://github.com/Jesusantiago/LandingPage#readme",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
