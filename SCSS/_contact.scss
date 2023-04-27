@@ -1,0 +1,26 @@
+@use "mixfun";
+
+.contact__links{
+    @include mixfun.container;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: mixfun.pixelToEm(40);
+    position: relative;
+    z-index: 10;
+
+    .bx{
+        border: 1px solid #ffF;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include mixfun.media{
+        justify-content: flex-end;
+    }
+}

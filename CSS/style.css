@@ -1,3 +1,140 @@
+:root {
+  --f-h: "Open Sans", sans-serif;
+  --f-m: "Poppins", sans-serif;
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+}
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--f-m);
+}
+
+.header {
+  min-height: 100vh;
+  background-color: var(--violet);
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .header::before {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 100vh;
+    top: 0;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+  z-index: 10;
+  display: grid;
+  gap: 3.125rem;
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: start;
+  }
+}
+
+.container__img {
+  width: 100%;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0;
+  position: relative;
+  z-index: 100;
+}
+.nav__logo {
+  width: 40%;
+  max-width: 200px;
+  display: block;
+}
+
+.container_text {
+  color: #FFF;
+}
+
+.text__title {
+  font-family: var(--f-h);
+  font-size: 1.75rem;
+}
+
+.text__paragraph {
+  line-height: 1.5;
+  margin: 1.2rem 0;
+}
+
+.texts__btn {
+  display: inline-block;
+  color: var(--violet);
+  background-color: #FFF;
+  padding: 15px 75px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.contact__links {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 40px 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+.contact__links .bx {
+  border: 1px solid #ffF;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .contact__links {
+    justify-content: flex-end;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
